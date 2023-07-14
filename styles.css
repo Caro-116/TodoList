@@ -1,0 +1,218 @@
+:root {
+    --bg-color: #FAFAFA;
+    --bg-header: url('./images/bg-desktop-light.jpg');
+    --light: #fff;
+    --card-color: var(--light);
+    --divider-color: #E3E4F1;
+    --text: #494C6B;
+    --footer-text: #9495A5;
+    /* define all the colors for light mode */
+}
+
+[data-theme="dark"] {
+    --bg-color: #171823;
+    ;
+    --bg-header: url('./images/bg-desktop-dark.jpg');
+    --light: #fff;
+    --card-color: #25273D;
+    --divider-color: #393A4B;
+    --text: #C8CBE7;
+    --footer-text: #5B5E7E;
+    /* define all your colors for dark mode */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--light);
+    margin-bottom: 48px;
+}
+
+.todo-container {
+    top: 90px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 540px;
+    margin: auto;
+}
+
+
+body {
+    background: var(--bg-color);
+}
+
+#todo-header {
+    background: var(--bg-header);
+    height: 300px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 24px;
+    background: var(--card-color);
+    padding: 23px;
+    border-radius: 5px;
+    color: var(--text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.25px;
+}
+
+.todo-lists {
+    margin-top: 24px;
+}
+
+.divider {
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.cbox {
+    border-radius: 50%;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    background: var(--card-color);
+    padding: 23px;
+    border-radius: 5px;
+    color: var(--footer-text);
+    font-family: Josefin Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.194px;
+}
+
+.views {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+}
+
+#input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.25px;
+}
+.cbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.cbox:checked{
+    background-color: #000;
+}
+
+
+/* .todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: var(--bg-color);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.add{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 40px;
+    background:linear-gradient(135deg, #7b4397, #dc2430) ;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+.add :hover{
+    background-color: cornflowerblue;
+}
+
+ol li{
+    color: #ffffff;
+    padding: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    color: #edeef0;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height:2px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(images/icons8-check-50.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/icons8-check.gif);
+}
+
+ */
