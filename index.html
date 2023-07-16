@@ -1,81 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
     <title>To do list</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- TODO HEADER -->
-    <div id="todo-header">
-
-    </div>
+    <div id="todo-header"></div>
     <div class="todo-container">
-        <div class="header-row">
-            <h4>TODO</h4>
-            <!-- Add this code to your new codes -->
-            <div>
-                <img src="./images/icon-moon.svg" alt="theme" id="icon" onclick="toggleTheme()" />
-            </div>
-            <!-- End of code -->
+      <div class="header-row">
+        <h4>TODO</h4>
+        <div>
+          <img src="./images/icon-moon.svg" alt="theme" id="icon" />
         </div>
-        <div class="row">
-            <input type="checkbox" class="cbox" />
-            <input type="text" value="" id="input"/>
+      </div>
+      <div class="row">
+        <img src="./images/icon-check.svg" class="cbox" checked="false" />
+        <input type="text" value="" id="input" />
+      </div>
+      <div>
+        <div id="todo-lists"></div>
+        <div class="footer-row">
+          <div>
+            <p id="todo_count">0 items left</p>
+          </div>
+          <div class="views">
+            <p class="active">All</p>
+            <p>Active</p>
+            <p>Completed</p>
+          </div>
+          <div>
+            <p id="clear-completed">Clear Completed</p>
+          </div>
         </div>
-        <div class="todo-lists">
-            <!-- <div class="row divider">
-                <input type="checkbox" class="cbox" />
-                <p>Create a new todo</p>
-            </div>
-            <div class="row divider">
-                <input type="checkbox" class="cbox" />
-                <p>Create a new todo</p>
-            </div>
-            <div class="row divider">
-                <input type="checkbox" class="cbox" />
-                <p>Create a new todo</p>
-            </div>
-            <div class="row divider">
-                <input type="checkbox" class="cbox" />
-                <p>Create a new todo</p>
-            </div> -->
-            <div class="footer-row">
-                <div>
-                    <p>5 items left</p>
-                </div>
-                <div class="views">
-                    <p>All</p>
-                    <p>Active</p>
-                    <p>Completed</p>
-                </div>
-                <div>
-                    <p>Clear Completed</p>
-                </div>
-            </div>
-        </div>
+        <div class="info-text">
+            <p>Drag and drop to reorder list</p>    
+        <div>
+      </div>
     </div>
-    <!-- END TODO HEADER -->
-    <!-- <div class="container">
-        <div class="todo-app">
-
-
-            <h2>TO DO LIST</h2>
-
-            <div class="row">
-
-                <input type="text" id="input" placeholder="Add your List" />
-                <button class="add" onclick="addTask()">Add</button>
-            </div>
-        </div>
-        <ul id="list-container">
-            </ul>
-    </div> -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
