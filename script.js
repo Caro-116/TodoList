@@ -273,5 +273,3 @@ function addTodo() {
   updateTodoCount();
   inputBox.value = "";
 }
-
-    
